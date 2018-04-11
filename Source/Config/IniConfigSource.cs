@@ -78,7 +78,7 @@ namespace Nini.Config
         /// <include file='IniConfigSource.xml' path='//Method[@name="LoadPath"]/docs/*' />
         public void Load (string filePath)
         {
-            Load (new StreamReader (filePath));
+            Load (new StreamReader (filePath),System.Text.Encoding.Default);
             this.savePath = filePath;
         }
         
